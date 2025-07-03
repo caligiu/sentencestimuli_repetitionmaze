@@ -2,7 +2,7 @@ name: Deploy to ShinyApps.io
 
 on:
   push:
-    branches: [main]  # o "master" se usi master
+    branches: [main] 
 
 jobs:
   deploy:
@@ -17,7 +17,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          install.packages('rsconnect')
+          install.packages()
         shell: Rscript {0}
 
       - name: Deploy app
@@ -26,8 +26,7 @@ jobs:
           SHINYAPPS_TOKEN: ${{ secrets.SHINYAPPS_TOKEN }}
           SHINYAPPS_SECRET: ${{ secrets.SHINYAPPS_SECRET }}
         run: |
-          library(rsconnect)
-          rsconnect::setAccountInfo(
+            rsconnect::setAccountInfo(
             name = Sys.getenv("SHINYAPPS_NAME"),
             token = Sys.getenv("SHINYAPPS_TOKEN"),
             secret = Sys.getenv("SHINYAPPS_SECRET")
