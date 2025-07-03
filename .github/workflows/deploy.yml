@@ -17,6 +17,7 @@ jobs:
 
       - name: Install rsconnect
         run: |
+          options(repos = c(CRAN = "https://cloud.r-project.org"))
           install.packages("rsconnect")
         shell: Rscript {0}
 
