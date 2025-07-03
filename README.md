@@ -1,4 +1,6 @@
 # Repetion Maze Distractor Generator 
+
+![Deploy to ShinyApps.io](https://github.com/giulia-calignano/sentencestimuli_repetitionmaze/actions/workflows/deploy.yaml/badge.svg)
 **Repetion Maze Distractor Generator** is a Shiny-based tool for creating, visualizing, and exporting linguistic stimuli that can used in a Maze task and in psycholinguistic experiments.  
 It allows you to input sentences, automatically generate distractor words, assign lateralized target positions, and simulate trial presentations.
 
@@ -19,4 +21,7 @@ It allows you to input sentences, automatically generate distractor words, assig
 
 ###  Locally in R studio downloading /app.R
 ### via [this link](https://pnslhg-giulia-calignano.shinyapps.io/repetitionmaze_distractorgenerator/)
+
+
+
 
