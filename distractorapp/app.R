@@ -119,7 +119,7 @@ server <- function(input, output, session) {
         target = words[i],
         dist1 = generate_distractor(words[i]),
         side1 = side_df$side1[i],
-        dist2 = generate_distractor(words[i]),
+        dist2 = generate_distractor(words[i]),  # CORRETTO QUI
         side2 = side_df$side2[i],
         dist3 = generate_distractor(words[i]),
         side3 = side_df$side3[i],
