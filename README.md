@@ -75,7 +75,7 @@ How distractors are created and filtered.
 
 How side assignment works for experimental layout purposes.
 
-**Note
+**Note**
 
 The distractor generation logic filters out real words using a reference dictionary [Phoneitalia](https://github.com/stefanocoretta/phonItaliaR/blob/main/data/phonitalia.rda). However, due to the random nature of the letter combinations, manual review is always recommended before finalizing stimuli.
 
