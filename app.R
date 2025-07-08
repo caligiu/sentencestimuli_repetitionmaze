@@ -1,3 +1,8 @@
+library(readr)
+phonitalia <- read_csv("phonitalia.rda")
+phi <- unique(phonitalia$word)
+
+
 library(shiny)
 library(dplyr)
 library(stringr)
